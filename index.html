@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Mercedes Replica PRO - Luxury cars experience">
+    <meta name="keywords" content="Mercedes, Luxury Cars, CLS, Maybach">
+    <meta name="author" content="Andrea Vazquez">
+
+    <title>Mercedes Replica PRO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Inter', sans-serif;
+            background:#f5f5f5;
+            color:#111;
+        }
+
+        img{
+            width:100%;
+            display:block;
+        }
+
+        /* HEADER */
+
+        header{
+            background:#fff;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:14px 40px;
+            font-size:13px;
+        }
+
+        .nav-left{
+            display:flex;
+            align-items:center;
+            gap:28px;
+        }
+
+        .logo{
+            width:22px;
+        }
+
+        .nav-links{
+            display:flex;
+            gap:28px;
+            list-style:none;
+        }
+
+        /* HERO */
+
+        .hero{
+            position:relative;
+            height:420px;
+            background-image:url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a");
+            background-position:center;
+            background-size:cover;
+        }
+
+        .hero-text{
+            position:absolute;
+            left:60px;
+            top:140px;
+            color:white;
+        }
+
+        .hero h1{
+            font-family:'Playfair Display', serif;
+            font-size:48px;
+            font-weight:400;
+        }
+
+        .hero p{
+            margin-top:10px;
+            font-size:14px;
+        }
+
+        /* PRODUCTS */
+
+        .products{
+            padding:60px;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+        }
+
+        article{
+            background:#e9e9e9;
+            padding:22px;
+            border-radius:12px;
+        }
+
+        article h2{
+            font-size:15px;
+            font-weight:500;
+            margin-bottom:15px;
+        }
+
+        .colors{
+            display:flex;
+            gap:10px;
+            margin-top:15px;
+        }
+
+        .dot{
+            width:12px;
+            height:12px;
+            border-radius:50%;
+        }
+
+        .white{
+            background:white;
+            border:1px solid black;
+        }
+
+        .red{
+            background:red;
+        }
+
+        .blue{
+            background:blue;
+        }
+
+        .black{
+            background:black;
+        }
+
+        .gold{
+            background:gold;
+        }
+
+        /* TITLE */
+
+        .big-title{
+            font-family:'Playfair Display', serif;
+            font-size:44px;
+            padding:60px;
+            line-height:1.2;
+        }
+
+        /* MAP */
+
+        .map{
+            position:relative;
+            height:320px;
+            background-image:url("https://images.unsplash.com/photo-1524661135-423995f22d0b");
+            background-position:center;
+            background-size:cover;
+        }
+
+        .map-box{
+            position:absolute;
+            left:60px;
+            top:90px;
+            background:rgba(255,255,255,0.9);
+            padding:25px;
+            border-radius:10px;
+            width:260px;
+        }
+
+        /* FEATURES */
+
+        .features{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap:25px;
+            padding:60px;
+        }
+
+        .feature-card{
+            background:#e9e9e9;
+            border-radius:10px;
+            overflow:hidden;
+        }
+
+        .feature-card p{
+            padding:10px;
+            font-size:13px;
+        }
+
+        /* RED SECTION */
+
+        .red-section{
+            position:relative;
+            height:380px;
+            background-image:url("https://images.unsplash.com/photo-1617788138017-80ad40651399");
+            background-position:center;
+            background-size:cover;
+            display:flex;
+            align-items:flex-end;
+            padding:60px;
+            color:white;
+        }
+
+        .red-section::before{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,0.35);
+        }
+
+        .red-text{
+            position:relative;
+            z-index:2;
+        }
+
+        .red-text h2{
+            font-family:'Playfair Display', serif;
+            font-size:32px;
+        }
+
+        .red-text p{
+            margin-top:10px;
+            max-width:300px;
+            font-size:13px;
+        }
+
+        /* MAYBACH */
+
+        .maybach{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            align-items:center;
+            padding:70px 60px;
+        }
+
+        .maybach h2{
+            font-family:'Playfair Display', serif;
+            font-size:30px;
+            margin-bottom:10px;
+        }
+
+        .maybach p{
+            font-size:13px;
+        }
+
+        /* CTA */
+
+        .cta{
+            background:#3a3a3a;
+            color:white;
+            text-align:center;
+            padding:25px;
+            font-size:13px;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:black;
+            color:white;
+            padding:60px;
+        }
+
+        footer h2{
+            font-family:'Playfair Display', serif;
+            font-weight:400;
+        }
+
+        .footer-columns{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .footer-columns ul{
+            list-style:none;
+        }
+
+        .footer-columns li{
+            margin-bottom:10px;
+            font-size:12px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            .products,
+            .features,
+            .maybach,
+            .footer-columns{
+                grid-template-columns:1fr;
+            }
+
+            .hero-text{
+                left:30px;
+            }
+
+            .big-title{
+                font-size:32px;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:20px;
+            }
+
+            .nav-links{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <section class="nav-left">
+
+                <img 
+                    class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg"
+                    alt="Mercedes logo"
+                >
+
+                <ul class="nav-links">
+                    <li>Vehicles</li>
+                    <li>Purchase</li>
+                    <li>Store</li>
+                </ul>
+
+            </section>
+
+            <p>⚪ ⚪</p>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <section class="hero-text">
+                <h1>New Mercedes CLS</h1>
+                <p>The power in your hands</p>
+            </section>
+
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section class="products">
+
+            <article>
+
+                <h2>Electric</h2>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1549924231-f129b911e442"
+                    alt="Electric Mercedes car"
+                >
+
+                <section class="colors">
+                    <span class="dot white"></span>
+                    <span class="dot red"></span>
+                    <span class="dot blue"></span>
+                </section>
+
+            </article>
+
+            <article>
+
+                <h2>Hybrid</h2>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c"
+                    alt="Hybrid Mercedes model"
+                >
+
+                <section class="colors">
+                    <span class="dot black"></span>
+                    <span class="dot gold"></span>
+                    <span class="dot red"></span>
+                </section>
+
+            </article>
+
+            <article>
+
+                <h2>Hybrid</h2>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
+                    alt="Mercedes hybrid sports car"
+                >
+
+            </article>
+
+            <article>
+
+                <h2>Electric</h2>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                    alt="Mercedes electric luxury car"
+                >
+
+            </article>
+
+        </section>
+
+        <!-- TITLE -->
+
+        <section class="big-title">
+            Find your nearest Mercedes dealer.
+        </section>
+
+        <!-- MAP -->
+
+        <section class="map">
+
+            <section class="map-box">
+                <p>Discover your local Mercedes partner store</p>
+            </section>
+
+        </section>
+
+        <!-- FEATURES -->
+
+        <section class="features">
+
+            <article class="feature-card">
+
+                <img 
+                    src="https://images.unsplash.com/photo-1583267746897-2cf415887172"
+                    alt="Mercedes comfort interior"
+                >
+
+                <p>Comfort</p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <img 
+                    src="https://images.unsplash.com/photo-1504215680853-026ed2a45def"
+                    alt="Mercedes technology system"
+                >
+
+                <p>Technology</p>
+
+            </article>
+
+            <article class="feature-card">
+
+                <img 
+                    src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+                    alt="Mercedes accessories"
+                >
+
+                <p>Accessories</p>
+
+            </article>
+
+        </section>
+
+        <!-- RED SECTION -->
+
+        <section class="red-section">
+
+            <section class="red-text">
+
+                <h2>Red as temptation</h2>
+
+                <p>
+                    Sleek design meets power and luxury.
+                    Experience driving like never before
+                    with the Mercedes CLS.
+                </p>
+
+            </section>
+
+        </section>
+
+        <!-- MAYBACH -->
+
+        <section class="maybach">
+
+            <section>
+
+                <h2>The Mercedes-Maybach wheel programme</h2>
+
+                <p>
+                    The exclusive Mercedes-Maybach wheel programme,
+                    with optional sizes and striking design details.
+                </p>
+
+            </section>
+
+            <img 
+                src="https://images.unsplash.com/photo-1610647752706-3bb12232b3ab"
+                alt="Mercedes Maybach wheel"
+            >
+
+        </section>
+
+        <!-- CTA -->
+
+        <section class="cta">
+            <p>Notify me when the car of your dreams becomes available.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>Join the power.</h2>
+
+        <section class="footer-columns">
+
+            <ul>
+                <li>Explorer</li>
+                <li>Vehicles</li>
+                <li>Configurator</li>
+            </ul>
+
+            <ul>
+                <li>About</li>
+                <li>Company</li>
+                <li>Jobs</li>
+            </ul>
+
+            <ul>
+                <li>Help</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>
